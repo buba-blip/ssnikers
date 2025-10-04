@@ -1,11 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FashionStore - Магазин модного одягу</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>FashionStore</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#catalog">Каталог</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+                <div class="cart-icon">
+                    🛒 <span class="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">МОДНИЙ ОДЯГ ДЛЯ СУЧАСНИХ ЛЮДЕЙ</h1>
+            <p class="hero-subtitle">Відкрий для себе нову колекцію 2024</p>
+            <button class="cta-button">До каталогу</button>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="catalog" class="catalog">
+        <div class="container">
+            <h2 class="section-title">Каталог товарів</h2>
+            
+            <!-- Categories -->
+            <div class="categories">
+                <button class="category-btn active" data-category="all">Всі товари</button>
+                <button class="category-btn" data-category="sneakers">Кросівки</button>
+                <button class="category-btn" data-category="hoodies">Худі</button>
+                <button class="category-btn" data-category="jeans">Джинси</button>
+                <button class="category-btn" data-category="sport">Спортивний одяг</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Кросівки -->
+                <div class="product-card" data-category="sneakers">
+                    <div class="product-image">
+                        <img src="images/sneakers1.jpg" alt="Кросівки Nike Air Max">
+                        <div class="product-overlay">
+                            <button class="quick-view">Швидкий перегляд</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nike Air Max 270</h3>
+                        <p class="product-price">3 499 ₴</p>
+                        <button class="add-to-cart" data-product="Nike Air Max 270" data-price="3499">Додати в кошик</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="sneakers">
+                    <div class="product-image">
+                        <img src="images/sneakers2.jpg" alt="Кросівки Adidas Ultraboost">
+                        <div class="product-overlay">
+                            <button class="quick-view">Швидкий перегляд</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Adidas Ultraboost</h3>
+                        <p class="product-price">4 299 ₴</p>
+                        <button class="add-to-cart" data-product="Adidas Ultraboost" data-price="4299">Додати в кошик</button>
+                    </div>
+                </div>
+
+                <!-- Худі -->
+                <div class="product-card" data-category="hoodies">
+                    <div class="product-image">
+
+
+<img src="images/hoodie1.jpg" alt="Худі Champion">
+                        <div class="product-overlay">
+                            <button class="quick-view">Швидкий перегляд</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Champion Hoodie</h3>
+                        <p class="product-price">1 899 ₴</p>
+                        <button class="add-to-cart" data-product="Champion Hoodie" data-price="1899">Додати в кошик</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="hoodies">
+                    <div class="product-image">
+                        <img src="images/hoodie2.jpg" alt="Худі Nike Sportswear">
+                        <div class="product-overlay">
+                            <button class="quick-view">Швидкий перегляд</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nike Sportswear</h3>
+                        <p class="product-price">2 199 ₴</p>
+                        <button class="add-to-cart" data-product="Nike Sportswear" data-price="2199">Додати в кошик</button>
+                    </div>
+                </div>
+
+                <!-- Джинси -->
+                <div class="product-card" data-category="jeans">
+                    <div class="product-image">
+                        <img src="images/jeans1.jpg" alt="Джинси Levi's 511">
+                        <div class="product-overlay">
+                            <button class="quick-view">Швидкий перегляд</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Levi's 511 Slim</h3>
+                        <p class="product-price">2 599 ₴</p>
+                        <button class="add-to-cart" data-product="Levi's 511 Slim" data-price="2599">Додати в кошик</button>
+                    </div>
+                </div>
+
+                <!-- Спортивний одяг -->
+                <div class="product-card" data-category="sport">
+                    <div class="product-image">
+                        <img src="images/sport1.jpg" alt="Спортивний костюм Nike">
+                        <div class="product-overlay">
+                            <button class="quick-view">Швидкий перегляд</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nike Training Set</h3>
+                        <p class="product-price">3 799 ₴</p>
+                        <button class="add-to-cart" data-product="Nike Training Set" data-price="3799">Додати в кошик</button>
+                    </div>
+                </div>
+
+                <!-- Додайте ще товари за аналогією -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ваш кошик</h2>
+            <div class="cart-items">
+                <!-- Тут будуть товари -->
+            </div>
+            <div class="cart-total">
+                <strong>Загальна сума: <span id="total-price">0</span> ₴</strong>
+            </div>
+            <button class="checkout-btn">Оформити замовлення</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
