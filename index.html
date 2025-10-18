@@ -386,6 +386,24 @@
             });
         }
     });
+   
+// Функціонал для прокрутки до футера при кліку на товар
+document.addEventListener('DOMContentLoaded', function() {
+    // Знаходимо всі товари в каталозі
+    const products = document.querySelectorAll('.product, .item, .catalog-item, .goods-item');
+    
+    products.forEach(product => {
+        product.addEventListener('click', function() {
+            // Плавно прокручуємо до футера
+            const footer = document.querySelector('footer');
+            if (footer) {
+                footer.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+
 </script>
 </body>
 </html>
