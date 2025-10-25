@@ -1,174 +1,133 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FashionStore - Магазин модного одягу</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Header -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header">
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo">
-                    <h2>FashionStore</h2>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#home">Головна</a></li>
-                    <li><a href="#catalog">Каталог</a></li>
-                    <li><a href="#about">Про нас</a></li>
-                    <li><a href="#contact">Контакти</a></li>
-                </ul>
-                <div class="cart-icon">
-                    🛒 <span class="cart-count">0</span>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <h2>FashionStore</h2>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#catalog">Каталог</a></li>
+
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="#contact">Контакти</a></li>
+          </ul>
+          <div class="cart-icon">🛒<span class="cart-count">0</span></div>
+        </div>
+      </nav>
     </header>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">МОДНИЙ ОДЯГ ДЛЯ СУЧАСНИХ ЛЮДЕЙ</h1>
-            <p class="hero-subtitle">Відкрий для себе нову колекцію 2024</p>
-            <button class="cta-button">До каталогу</button>
-        </div>
+      <div class="hero-content">
+        <h1 class="hero-title">МОДНИЙ ОДЯГ ДЛЯ СУЧАСНИХ ЛЮДЕЙ</h1>
+        <p class="hero-subtitle">Відкрий для себе нову колекцію 2025</p>
+        <button class="cta-button">До каталогу</button>
+      </div>
     </section>
 
-    <!-- Catalog Section -->
     <section id="catalog" class="catalog">
-        <div class="container">
-            <h2 class="section-title">Каталог товарів</h2>
-            
-            <!-- Categories -->
-            <div class="categories">
-                <button class="category-btn active" data-category="all">Всі товари</button>
-                <button class="category-btn" data-category="sneakers">Кросівки</button>
-                <button class="category-btn" data-category="hoodies">Худі</button>
-                <button class="category-btn" data-category="jeans">Джинси</button>
-                <button class="category-btn" data-category="sport">Спортивний одяг</button>
-            </div>
+      <div class="container">
+        <h2 class="section-title">Каталог товарів</h2>
 
-            <!-- Products Grid -->
-            <div class="products-grid">
-                <!-- Кросівки -->
-                <div class="product-card" data-category="sneakers">
-                    <div class="product-image">
-                        <img src="images/sneakers1.jpg" alt="Кросівки Nike Air Max">
-                        <div class="product-overlay">
-                            <img src="https://tapok.com.ua/products/0/53/05/9/53059/438579_middle_long.webp" >
-                            <button class="quick-view">Швидкий перегляд</button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Nike Air Max 270</h3>
-                        <p class="product-price">3 499 ₴</p>
-                        <button class="add-to-cart" data-product="Nike Air Max 270" data-price="3499">Додати в кошик</button>
-                    </div>
-                </div>
-
-                <div class="product-card" data-category="sneakers">
-                    <div class="product-image">
-                        <img src="images/sneakers2.jpg" alt="Кросівки Adidas Ultraboost">
-                        <div class="product-overlay">
-                            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSRwiBPVxRXjBpTc-Tneh5arU0fqUZby2ejmtcD_Ef9nhW0oq-MkCcxdm1ZzoArSg8_bCumSk5rr8evQ4P20mchV_ECZP4XFZCw3EcYUkTH7tNcBrhRfC2Z4OBJ6CuMKkAIq4_xUkVC&usqp=CAc" alt="ultraboost">
-                            <button class="quick-view">Швидкий перегляд</button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Adidas Ultraboost</h3>
-                        <p class="product-price">4 299 ₴</p>
-                        <button class="add-to-cart" data-product="Adidas Ultraboost" data-price="4299">Додати в кошик</button>
-                    </div>
-                </div>
-
-                <!-- Худі -->
-                <div class="product-card" data-category="hoodies">
-                    <div class="product-image">
-
-
-<img src="images/hoodie1.jpg" alt="Худі Champion">
-                        <div class="product-overlay">
-                            <img src="https://sportano.ua/img/b52b588476b8def9e5d485faf958f16f/8/0/8058132447837_20-jpg/ditjachij-svitshot-champion-legacy-chornij-820342.jpg" alt="">
-                            <button class="quick-view">Швидкий перегляд</button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Champion Hoodie</h3>
-                        <p class="product-price">1 899 ₴</p>
-                        <button class="add-to-cart" data-product="Champion Hoodie" data-price="1899">Додати в кошик</button>
-                    </div>
-                </div>
-
-                <div class="product-card" data-category="hoodies">
-                    <div class="product-image">
-                        <img src="images/hoodie2.jpg" alt="Худі Nike Sportswear">
-                        <div class="product-overlay">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwh241JLMoEPizdiw-EpUczyQxDDVaKnYsNg&s" alt="">
-                            <button class="quick-view">Швидкий перегляд</button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Nike Sportswear</h3>
-                        <p class="product-price">2 199 ₴</p>
-                        <button class="add-to-cart" data-product="Nike Sportswear" data-price="2199">Додати в кошик</button>
-                    </div>
-                </div>
-
-                <!-- Джинси -->
-                <div class="product-card" data-category="jeans">
-                    <div class="product-image">
-                        <img src="images/jeans1.jpg" alt="Джинси Levi's 511">
-                        <div class="product-overlay">
-                            <img src="https://cdn-images.farfetch-contents.com/25/50/34/66/25503466_55601676_600.jpg" alt="" srcset="">
-                            <button class="quick-view">Швидкий перегляд</button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Levi's 511 Slim</h3>
-                        <p class="product-price">2 599 ₴</p>
-                        <button class="add-to-cart" data-product="Levi's 511 Slim" data-price="2599">Додати в кошик</button>
-                    </div>
-                </div>
-
-                <!-- Спортивний одяг -->
-                <div class="product-card" data-category="sport">
-                    <div class="product-image">
-                        <img src="images/sport1.jpg" alt="Спортивний костюм Nike">
-                        <div class="product-overlay">
-                            <img src="data:image/webp;base64,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" alt="" srcset="">
-                            <button class="quick-view">Швидкий перегляд</button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Nike Training Set</h3>
-                        <p class="product-price">3 799 ₴</p>
-                        <button class="add-to-cart" data-product="Nike Training Set" data-price="3799">Додати в кошик</button>
-                    </div>
-                </div>
-
-                <!-- Додайте ще товари за аналогією -->
-            </div>
+        <div class="categories">
+          <button class="category-btn active" data-category="all">
+            Всі товари
+          </button>
+          <button class="category-btn" data-category="sneakers">
+            Кросівки
+          </button>
+          <button class="category-btn" data-category="hoodies">Худі</button>
+          <button class="category-btn" data-category="jeans">Джинси</button>
+          <button class="category-btn" data-category="sport">
+            Спортивний одяг
+          </button>
         </div>
+
+        <div class="products-grid"></div>
+      </div>
     </section>
 
-    <!-- Cart Modal -->
     <div id="cartModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Ваш кошик</h2>
-            <div class="cart-items">
-                <!-- Тут будуть товари -->
-            </div>
-            <div class="cart-total">
-                <strong>Загальна сума: <span id="total-price">0</span> ₴</strong>
-            </div>
-            <button class="checkout-btn">Оформити замовлення</button>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Ваш кошик</h2>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+          <strong>Загальна сума: <span id="total-price">0</span> ₴</strong>
         </div>
+        <button class="checkout-btn">Оформити замовлення</button>
+      </div>
     </div>
 
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">Про нас</h2>
+        <div class="about-content">
+          <img
+            src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800"
+            alt="Команда FashionStore"
+          />
+          <div class="about-text">
+            <h3>Хто ми?</h3>
+            <p>
+              Ми — команда ентузіастів моди, яка прагне поєднати стиль, комфорт
+              і доступність. FashionStore створений, щоб кожен міг знайти свій
+              ідеальний образ, незалежно від віку чи стилю життя.
+            </p>
+            <p>
+              Наші колекції — це поєднання світових трендів та української
+              креативності. Ми працюємо лише з перевіреними брендами і дбаємо
+              про якість кожного товару.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Контакти</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <p><strong>Адреса:</strong> м. Київ, вул. Незалежності, 15</p>
+            <p><strong>Телефон:</strong> +380 (67) 123-45-67</p>
+            <p><strong>Email:</strong> support@fashionstore.ua</p>
+          </div>
+          <form
+            class="contact-form"
+            onsubmit="event.preventDefault(); alert('Дякуємо за повідомлення!');"
+          >
+            <input type="text" placeholder="Ваше ім’я" required />
+            <input type="email" placeholder="Ваш email" required />
+            <textarea
+              placeholder="Ваше повідомлення"
+              rows="4"
+              required
+            ></textarea>
+            <button type="submit" class="send-btn">Надіслати</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 FashionStore. Всі права захищені.</p>
+        <p>Релізний проект.</p>
+      </div>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
